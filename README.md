@@ -1,0 +1,14 @@
+
+
+CREATE DATABASE jira;
+CREATE DATABASE confluence;
+
+CREATE USER jira PASSWORD 'jira' SUPERUSER;
+CREATE USER confluence PASSWORD 'confluence' SUPERUSER;
+
+GRANT ALL PRIVILEGES ON DATABASE jira TO jira;
+GRANT ALL PRIVILEGES ON DATABASE confluence TO confluence;
+
+commit;
+
+
